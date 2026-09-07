@@ -1,0 +1,63 @@
+generated: '2026-09-07'
+method: probed
+source: live HTTPS probes of every host this record knows (adicetbio.com, www.adicetbio.com,
+  investor.adicetbio.com); no OpenAPI servers[] or API baseURL hosts exist for this company
+note: >-
+  Every named /.well-known/ path was probed and none returned a document. www.adicetbio.com
+  answers 404 with an HTML error page for all of them; the apex adicetbio.com 301-redirects
+  every path to www; investor.adicetbio.com (the vendor-hosted investor relations portal)
+  returns an Akamai "Access Denied" 403 to every request including with a browser User-Agent,
+  so its /.well-known/ surface could not be read. No WellKnown or SecurityTxt pointer is
+  emitted — this file records a measured absence, not a served surface.
+hosts:
+- host: www.adicetbio.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: adicetbio.com
+  note: apex redirects (301) to www.adicetbio.com for every path probed
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+  - path: /.well-known/agent-card.json
+    status: 301
+  - path: /.well-known/agent.json
+    status: 301
+- host: investor.adicetbio.com
+  note: Akamai edge returns "Access Denied" 403 to every path, browser User-Agent included;
+    this is a bot challenge on the IR vendor's host, not evidence of absence
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /.well-known/agent-card.json
+    status: 403
+  - path: /.well-known/agent.json
+    status: 403

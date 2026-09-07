@@ -64,5 +64,6 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Adicet Bio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/adicet-bio_stock/
+Adicet Bio, Inc. (Nasdaq: ACET) is a clinical-stage biotechnology company with offices in Redwood City, California and Boston, Massachusetts, discovering and developing allogeneic "off-the-shelf" gamma delta T cell therapies engineered with chimeric antigen receptors (CARs) for autoimmune disease and cancer. Its lead candidate, prulacabtagene leucel (prula-cel), is an anti-CD20 gamma delta CAR T cell therapy in development for B cell-mediated autoimmune diseases, alongside ADI-212 for metastatic castration-resistant prostate cancer. Adicet publishes a corporate website covering its science platform, clinical pipeline, leadership and careers, plus a vendor-hosted investor relations portal. It operates no public developer program, API, SDK, or machine-readable interface of any kind; this profile records that absence rather than an API surface.
+
+- https://www.adicetbio.com/

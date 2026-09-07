@@ -1,0 +1,38 @@
+# Adicet Bio
+
+> Adicet Bio, Inc. (Nasdaq: ACET) is a clinical-stage biotechnology company developing
+> allogeneic "off-the-shelf" gamma delta T cell therapies engineered with chimeric antigen
+> receptors (CARs) for autoimmune disease and cancer.
+
+generated: 2026-09-07
+method: generated
+source: apis.yml + www.adicetbio.com (probed 2026-09-07); the provider serves no /llms.txt
+
+Adicet Bio has no public API, developer portal, SDK, CLI, MCP server, agent card, or any
+other machine-readable interface. This file is an API Evangelist-generated summary of the
+company's public web surface, not a provider-published document. Probes run 2026-09-07
+against adicetbio.com, www.adicetbio.com and investor.adicetbio.com returned 404/301/403
+for every OpenAPI, Swagger, GraphQL, llms.txt and /.well-known/ path attempted.
+
+## Company
+
+- [Adicet Bio](https://www.adicetbio.com/): Corporate home page — gamma delta T cell platform overview.
+- [Science](https://www.adicetbio.com/science/): Gamma delta T cell biology, the allogeneic platform, and novel targeting moieties.
+- [Pipeline](https://www.adicetbio.com/pipeline/): Clinical pipeline, including prulacabtagene leucel (prula-cel, anti-CD20 gamma delta CAR T) and ADI-212.
+- [About](https://www.adicetbio.com/about/): Leadership, board of directors, and scientific advisory board.
+- [Contact](https://www.adicetbio.com/contact/): Redwood City, CA and Boston, MA offices.
+
+## Careers
+
+- [Careers overview](https://www.adicetbio.com/careers/overview/)
+- [Current openings](https://www.adicetbio.com/careers/openings/)
+
+## Legal
+
+- [Terms of Use](https://www.adicetbio.com/terms-of-use/)
+- [Privacy Policy](https://www.adicetbio.com/privacy/)
+- [Cookie Notice](https://www.adicetbio.com/cookie-notice/)
+
+## Optional
+
+- [Investor relations](https://investor.adicetbio.com/): Vendor-hosted IR portal (SEC filings, news releases, events). Returns HTTP 403 to non-browser clients.

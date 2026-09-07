@@ -1,7 +1,16 @@
 aid: adicet-bio
 name: Adicet Bio
-description: 'Adicet Bio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Adicet Bio, Inc. (Nasdaq: ACET) is a clinical-stage biotechnology company
+  with offices in Redwood City, California and Boston, Massachusetts, discovering and
+  developing allogeneic "off-the-shelf" gamma delta T cell therapies engineered with
+  chimeric antigen receptors (CARs) for autoimmune disease and cancer. Its lead candidate,
+  prulacabtagene leucel (prula-cel), is an anti-CD20 gamma delta CAR T cell therapy in
+  development for B cell-mediated autoimmune diseases, alongside ADI-212 for metastatic
+  castration-resistant prostate cancer. Adicet publishes a corporate website covering its
+  science platform, clinical pipeline, leadership and careers, plus a vendor-hosted investor
+  relations portal. It operates no public developer program, API, SDK, or machine-readable
+  interface of any kind; this profile records that absence rather than an API surface.'
+image: https://www.adicetbio.com/themes/default/images/logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/adicet-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +21,14 @@ created: '2026-09-07'
 modified: '2026-09-07'
 tags:
 - Company
+- Biotechnology
+- Life Sciences
+- Cell Therapy
+- Immunotherapy
+- Oncology
+- Autoimmune
+- Clinical Trials
+- Pharmaceuticals
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,45 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/adicet-bio-llms.txt
+- type: DomainSecurity
+  url: security/adicet-bio-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/adicet-bio_stock/
+  url: https://www.adicetbio.com/
+- type: About
+  url: https://www.adicetbio.com/about/
+- type: Support
+  url: https://www.adicetbio.com/contact/
+- type: TermsOfService
+  url: https://www.adicetbio.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.adicetbio.com/privacy/
+- type: Careers
+  url: https://www.adicetbio.com/careers/openings/
+x-enrichment:
+  date: '2026-09-07'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Adicet Bio is a clinical-stage cell-therapy biotech — its products are investigational
+    gamma delta CAR T cell therapies, not software — and its entire public surface
+    is a nine-page corporate marketing site plus a vendor-hosted investor relations portal;
+    every OpenAPI, Swagger, GraphQL, MCP, agent-card and /.well-known/ path probed on
+    adicetbio.com, www.adicetbio.com and investor.adicetbio.com returned 404, 301 or 403,
+    and the site contains no developer, API, docs or integrations link anywhere in its navigation.
+  evidence:
+  - url: https://www.adicetbio.com/openapi.json
+    status: 404
+  - url: https://www.adicetbio.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.adicetbio.com/llms.txt
+    status: 404
+  - url: https://www.adicetbio.com/graphql
+    status: 404
+  - url: https://www.adicetbio.com/
+    status: 200
+  checked: '2026-09-07'
